@@ -7,7 +7,7 @@
 */
 #SingleInstance force
 #Persistent
-#Include C:\Users\test\Documents\AutoHotkey\Lib
+#Include C:\Users\abdel\Documents
 #Include AHKHID.ahk
 
 ; Tray icon
@@ -57,4 +57,5 @@ Bin2Hex(addr,len) {
     DllCall(&fun, ptr, &hex, ptr, addr, "UInt", len, "CDecl")
     VarSetCapacity(hex, -1) ; update StrLen
     Return hex
+
 }
